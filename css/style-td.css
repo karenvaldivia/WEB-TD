@@ -1,0 +1,367 @@
+/* COMMON STYLES */
+body {
+	font-family: 'Montserrat-Light';
+	font-size: 14px;
+	line-height: 1;
+}
+/* FONTS */
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url(../fonts/montserrat/Montserrat-Light.otf);
+}
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(../fonts/montserrat/Montserrat-Regular.otf);
+}
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../fonts/montserrat/Montserrat-Bold.otf);
+}
+@font-face {
+	font-family: "Montserrat-Black";
+	src: url(../fonts/montserrat/Montserrat-Black.otf);
+}
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: url(../fonts/gilroy/Gilroy-ExtraBold.otf);
+}
+h1 {
+	color: white;
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 55px;
+	letter-spacing: 2px;
+}
+h1 span {
+	color: #00FAC4;
+}
+h2 {
+	font-family: 'Montserrat-Bold';
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+h3 {
+
+}
+h4 {
+	font-family: 'Montserrat-Regular';
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+h5 {
+
+}
+h6 {
+
+}
+p {
+	font-family: 'Montserrat-Light';
+	font-size: 16px;
+	letter-spacing: .5px;
+	line-height: 20px;
+}
+.tdline-extremes {
+	font-size: 16px;
+	font-family: 'Montserrat-Regular';
+	letter-spacing: 1.5px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.tdline-extremes:before, .tdline-extremes:after {
+	content: '';
+	display: inline-block;
+	height: 2px;
+	background: white;
+	width: 15px;
+	position: relative;
+	vertical-align: middle;
+}
+.tdline-extremes:before {
+	left: -8px;
+	margin-left: -50%;
+}
+.tdline-extremes:after {
+	right: -8px;
+	margin-right: -50%;
+}
+.td-subtit {
+	color: white;
+	font-family: 'Montserrat-Light';
+	font-size: 22px;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin: 20px auto 0;
+}
+.tdnews-tit-article {
+	font-family: 'Montserrat-Regular';
+	font-size: 18px;
+	line-height: 23px;
+}
+/*ETC DIVS TITULOS*/
+.tit-interna-news {
+	color: white;
+	font-family: "Gilroy-ExtraBold";
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+/*ETC DIVS TITULOS*/
+
+/* END FONTS */
+
+/* ICONS */
+.icon-x50-30 {
+	display: block;
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+}
+.icon-x60-50 {
+	display: block;
+	margin: 30px auto 0;
+	width: 60px;
+	height: 60px;
+}
+.icon-x50-30 img, .icon-x60-50 img, .icon-x70 img {
+	width: 100%;
+}
+
+.tdnews-actions a {
+	color: white;
+}
+/* END ICONS */
+
+/* HERO */
+.hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.65);
+	z-index: -1;
+}
+/* END HERO */
+
+/* SECTIONS */
+section {
+	margin: 80px 0;
+}
+.tdline-left {
+	color: #686868;
+	font-family: 'Montserrat-Bold';
+	font-size: 16px;
+	letter-spacing: 1px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	text-transform: uppercase;
+}
+.tdline-left:before {
+	content: '';
+	display: inline-block;
+	height: 3px;
+	background: #686868;
+	width: 15px;
+	position: relative;
+	vertical-align: middle;
+}
+/* END SECTIONS */
+
+/* CARDS */
+.card {
+	border: none;
+	border-radius: 0;
+	margin: 50px 20px;
+}
+.card-img-top {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.card-body {
+	z-index: 2;
+}
+.tdcard-img {
+	position: relative;
+}
+
+/* END CARDS */
+
+/* TABS */
+.tdtabs {
+	border-bottom: 1px solid #7E7E7E;
+	font-size: 19px;
+}
+.nav-tabs .nav-link.active {
+	background-color: #fff;
+	border: none;
+	border-bottom: 4px solid #24CCE1;
+	color: #24CCE1;
+	font-family: 'Montserrat-Regular';
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.nav-tabs .nav-link {
+	color: #7E7E7E;
+	font-family: 'Montserrat-Light';
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border-color: transparent;
+}
+.nav-link.active:hover {
+	border-color: #24CCE1;
+}
+/* END TABS */
+/* END COMMON STYLES */
+
+
+
+
+/* TD HOME */
+/* HERO HOME FULL HEIGHT */
+#hero-home-tdvideo .hero-fullheight {
+	background-image: url(../images/home/hero-home-preview.jpg);
+}
+.hero-fullheight {
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	-webkit-flex-flow: column wrap;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+.hero-fullheight-reset {
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	-webkit-flex-flow: column wrap;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	
+	z-index: 1;
+	position: relative;
+}
+
+/* END HERO HOME FULL HEIGHT */
+
+/* TD HOME DIFFERENTIAL */
+#tdhome-differential .tdhome-dif-text .icon-x50-30, #tdhome-differential .tdhome-dif-text h4 {
+	display: inline-block;
+	vertical-align: middle;
+}
+#tdhome-differential .tdhome-dif-text p {
+	margin-left: 64px;
+}
+/* END TD HOME DIFFERENTIAL */
+
+/* TD HOME CARDS */
+a.tdcard-title {
+	color: #333;
+	text-decoration: none;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+	line-height: 23px;
+}
+a.tdcard-title:hover {
+	text-decoration: none;
+}
+.tdcard-author-img {
+
+}
+.tdcard-author-img img {
+	border-radius: 100%;
+	height: 60px;
+	width: 60px;
+}
+.tdcard-author-name {
+	color: #3FE3FF!important;
+	font-family: 'Montserrat-Regular';
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+.tdcard-author-name .tdcard-author-date {
+	color: #333;
+	font-family: 'Montserrat-Light';
+}
+.tdcard-author-time {
+
+}
+.tdcard-author-team {
+	display: block;
+	margin-top: 6px;
+}
+.card-footer {
+	padding: 0 1.25rem .75rem;
+	background-color: transparent;
+	border-top: none;
+	z-index: 2;
+}
+/* END TD HOME CARDS */
+/* END TD HOME */
+
+
+/* TD NEWS */
+
+/* TD NEWS INTERNA */
+#tdnews-hero-int {
+	height: 400px;
+}
+#tdnews-hero-int .hero-overlay {
+	height: 400px;
+}
+.hero-10-ene-1-news .hero-fullheight-reset {
+	background-image: url(../images/tdnews/vucanews/10-ene/10-ene-news-bg/10-ene-news-1-bg.jpg);
+}
+.hero-tdnews-int-actions-icon {
+
+}
+#hero-tdnews-int .media .tdcard-author-date, #hero-tdnews-int .media .tdcard-author-team {
+	color: white;
+}
+#hero-tdnews-int .media {
+	margin-top: 10px;
+}
+#hero-tdnews-int .tdnews-actions {
+	margin-top: 50px;
+}
+#hero-tdnews-int .hero-td-news-text {
+	position: absolute;
+	bottom: 20px;
+}
+
+#tdnews-article .tdnews-article-1-img img {
+	width: 100%;
+}
+/* END TD NEWS INTERNA*/
+
+/* END TD NEWS */
+
+
+
+
+
+
+
+
+
+
